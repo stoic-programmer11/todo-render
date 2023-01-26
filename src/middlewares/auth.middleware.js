@@ -22,10 +22,10 @@ const authMiddleware = (req, res, next) => {
         }
       }
     );
-  } else{
+  } else {
     res.status(400).json({
       error: "no token provided",
-      message: "No se esta enviando un token de autentificacion"
+      message: "No se esta enviando un token de autentificacion",
     });
   }
 };
